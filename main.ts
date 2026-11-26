@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * kettle-line — a dependency-free CLI for presenting one observed sentence.
+ * still-falling — a dependency-free CLI for presenting one patient sentence.
  * Plain JavaScript is kept in this .ts file so Node 22 can run it directly;
  * JSDoc supplies the TypeScript-flavored types.
  */
 
 const ENTRY_LINE =
-  "For one second before the kettle clicks off, the kitchen goes so quiet you can hear the water deciding to become steam.";
-const NAME = "kettle-line";
+  "Every office vending machine holds one snack that has been falling for three years — suspended between coil and drop, it has learned patience.";
+const NAME = "still-falling";
 const VERSION = "1.0.0";
 const DEFAULT_WIDTH = 72;
 const MIN_WIDTH = 40;
@@ -227,7 +227,7 @@ function renderFancy(width) {
     "",
     border(`╭${horizontal}╮`),
     side(blank),
-    side(paint(center("the hush before the click", innerWidth), "2;37", color)),
+    side(paint(center("three years, and counting", innerWidth), "2;37", color)),
     side(blank),
   ];
 
